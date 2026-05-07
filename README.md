@@ -62,6 +62,7 @@ Figures 1 and 2 show SSH logs score highest (2.03, CRITICAL) due to IP addresses
 ![Figure 2](figures/fig2_top_attributes.png)
 
 ## Usage
+**Step 0 — Clone repository and install dependencies**<br>
 **Step 1 — Score a log file:**<br>
 ```bash
 python main.py datasets/<logname>.log_structured.csv
