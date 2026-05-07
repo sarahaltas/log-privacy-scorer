@@ -11,9 +11,9 @@ The sensitive attributes detected by this tool are inspired from the taxonomy de
 
 Attributes are classified into three tiers with uniform weights within each:
 
-- Direct identifiers (IP, MAC, username) receive weight 1.00 because they each independently satisfy the GDPR Art. 4 identification threshold without requiring combination; a single direct identifier alone always reaches HIGH.
-- Quasi-identifiers (hostname, timestamp, port, file path, URL, user/session/device ID) receive weight 0.30 because they require combination to enable re-identification, following Sweeney (2002); one or two quasi-identifiers stays LOW or MEDIUM and a combination of at least three is required to reach HIGH. 
-- Non-sensitive attributes (log level, protocol, component, process ID) receive weight 0.05, reflecting minimal but non-zero contribution to the overall privacy surface, as noted by Aghili et al. (2025). 
+- **Direct identifiers** (IP, MAC, username) receive weight 1.00 because they each independently satisfy the GDPR Art. 4 identification threshold without requiring combination; a single direct identifier alone always reaches HIGH.
+- **Quasi-identifiers** (hostname, timestamp, port, file path, URL, user/session/device ID) receive weight 0.30 because they require combination to enable re-identification, following Sweeney (2002); one or two quasi-identifiers stays LOW or MEDIUM and a combination of at least three is required to reach HIGH. 
+- **Non-sensitive attributes** (log level, protocol, component, process ID) receive weight 0.05, reflecting minimal but non-zero contribution to the overall privacy surface, as noted by Aghili et al. (2025). 
 
 The risk score is computed as:
 ```
