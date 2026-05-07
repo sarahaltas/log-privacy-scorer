@@ -1,0 +1,29 @@
+{
+  "direct_identifiers": {
+    "ip":       1.00,
+    "mac":      1.00,
+    "username": 1.00
+  },
+  "quasi_identifiers": {
+    "hostname":   0.30,
+    "user_id":    0.30,
+    "session_id": 0.30,
+    "device_id":  0.30,
+    "file_path":  0.30,
+    "url":        0.30,
+    "timestamp":  0.30,
+    "port":       0.30
+  },
+  "non_sensitive": {
+    "log_level":   0.05,
+    "status_code": 0.05,
+    "method":      0.05,
+    "component":   0.05,
+    "config":      0.05,
+    "protocol":    0.05,
+    "process_id":  0.05
+  },
+  "combinations": {
+    "combination_multiplier": 0.15
+  }
+}
