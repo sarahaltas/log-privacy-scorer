@@ -54,12 +54,12 @@ The tool was evaluated on four [LogHub](https://github.com/logpai/loghub) datase
 Figures 1 and 2 show SSH logs score highest (2.03, CRITICAL) due to IP addresses in 87% of lines and usernames in 57%. Apache scores lowest (0.50, MEDIUM) since its error logs contain almost no direct identifiers, only timestamps and occasional file paths. HDFS (1.41) and Linux (1.33) both reach HIGH, driven by IP addresses in 65% and 62% of lines respectively. 
 
 <div align="center">
-  <img src="fig1_average_scores.png" width="75%"/>
+  <img src="figures/fig1_average_scores.png" width="75%"/>
 </div>
 
 <br>
 
-![Figure 2](fig2_top_attributes.png)
+![Figure 2](figures/fig2_top_attributes.png)
 
 ## Usage
 **Step 1 — Score a log file:**<br>
